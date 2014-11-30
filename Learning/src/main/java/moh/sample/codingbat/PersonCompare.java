@@ -6,21 +6,21 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-class PersonNameComparator implements Comparator<Person> {
+class PersonNameComparator implements Comparator<Person1> {
 
-	public int compare(Person o1, Person o2) {
+	public int compare(Person1 o1, Person1 o2) {
 
-		return o2.getFirstName().compareTo(o1.getFirstName());
+		return o2.getName().compareTo(o1.getName());
 	}
 }
 
-class PersonNameScoreComparator implements Comparator<Person> {
+class PersonNameScoreComparator implements Comparator<Person1> {
 
-	public int compare(Person o1, Person o2) {
+	public int compare(Person1 o1, Person1 o2) {
 
 		int result = -1;
 		if (o1.getScore() == o2.getScore()) {
-			result = o1.getFirstName().compareTo(o2.getFirstName());
+			result = o1.getName().compareTo(o2.getName());
 		}
 		if (o1.getScore() > o2.getScore()) {
 			result = 1;
@@ -30,9 +30,9 @@ class PersonNameScoreComparator implements Comparator<Person> {
 }
 
 // select * form Person order by score;
-class PersonScoreComparator1 implements Comparator<Person> {
+class PersonScoreComparator1 implements Comparator<Person1> {
 
-	public int compare(Person o1, Person o2) {
+	public int compare(Person1 o1, Person1 o2) {
 		if (o1.getScore() == o2.getScore()) {
 			return 0;
 		}
@@ -90,10 +90,10 @@ class Person1 {
 }
 
 public class PersonCompare {
-	private List<Person> people;
+	private List<Person1> people;
 
 	PersonCompare() {
-		people = new ArrayList<Person>();
+		people = new ArrayList<Person1>();
 	}
 
 	public static void main(String[] args) {
