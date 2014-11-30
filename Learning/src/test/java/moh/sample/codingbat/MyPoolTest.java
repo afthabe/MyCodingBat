@@ -1,4 +1,4 @@
-package moh.sample.threads;
+package moh.sample.codingbat;
 
 import org.junit.Test;
 

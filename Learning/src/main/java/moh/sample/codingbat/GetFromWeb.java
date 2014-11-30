@@ -1,4 +1,4 @@
-package moh.sample.threads;
+package moh.sample.codingbat;
 
 import org.s2n.ddt.util.http.HttpData;
 import org.s2n.ddt.util.http.NetSend;

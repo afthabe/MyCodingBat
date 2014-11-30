@@ -1,4 +1,6 @@
-package moh.sample.threads;
+package moh.sample.codingbat;
+
+import moh.sample.codingbat.NumberFormat;
 
 import org.junit.Test;
 //import junit.framework.TestCase;
