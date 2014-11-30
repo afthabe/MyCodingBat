@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="windows-1256">
+		<title>Insert title here</title>
+	</head>
+	<body>
+	    <label>Number 1: </label>
+		<input type=text  id=t1>
+		<label>Number 2: </label>
+		<input type=text id=t2>
+		<label>Sum : </label>
+		<input type=text id=t3>
+		<input type=button value = "calculate" onclick='work()' id=b1>
+	</body>
+	<script>
+	function work() {
+	   tx1 = document.getElementById('t1')
+	   tx1a = parseInt(tx1.value)
+	   tx2 = document.getElementById('t2')
+	   tx2a = parseInt(tx2.value)
+	   if(isNaN(tx1a) || isNaN(tx2a)) {
+		   alert('Please Enter Digits');
+		   tx1.value = "";
+		   tx2.value = "";
+		   tx3.value = "";
+	   }else{
+		tx3 = tx1a + tx2a
+		document.getElementById('t3').value=tx3;
+	   }
+	   
+	}
+	</script>
+</html>
