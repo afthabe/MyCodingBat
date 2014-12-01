@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import moh.sample.codingbat.Person;
-import moh.sample.codingbat.PersonComparator;
-
 
 public class HashMapTest {
 	/**
